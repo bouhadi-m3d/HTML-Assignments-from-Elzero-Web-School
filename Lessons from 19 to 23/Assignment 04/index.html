@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video with Multiple Extensions</title>
+</head>
+<body>
+
+    <video controls autoplay muted poster="poster/cat.jpeg" width="200" height="200">
+        <source src="video/cute_cat.mp4" type="video/mp4">
+        <source src="video.webm" type="video/webm">
+        <source src="video.ogv" type="video/ogg">
+        Your browser does not support the video tag. Please update to a modern browser.
+    </video>
+
+    <div>
+        <label for="caption-language">Choose Caption Language:</label>
+        <select id="caption-language">
+            <option value="en">English</option>
+            <option value="ar">Arabic</option>
+        </select>
+    </div>
+
+</body>
+</html>
