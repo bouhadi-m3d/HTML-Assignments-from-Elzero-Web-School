@@ -1,0 +1,52 @@
+
+1. ما هو العنصر المناسب لوضعه داخل النموذج لإرسال البيانات عند الضغط عليه؟
+The suitable element is <button> or <input type="submit">. Both are used to submit data when clicked inside a form:
+
+<button type="submit">Submit</button>
+
+Or:
+
+<input type="submit" value="Submit">
+
+2. ما هو العنصر المناسب ليكون عنوان للصفحة كاملة؟
+The suitable element for the title of the entire page is <h1>. This should be used as the main heading, and there should be only one <h1> per page.
+
+<h1>Page Title</h1>
+
+3. ما هو العنصر المناسب ليكون عنوان لقسم داخل الصفحة؟
+The suitable element for a section title is one of the subheading elements like <h2>, <h3>, etc. <h2> is commonly used for section titles.
+
+<h2>Section Title</h2>
+
+4. ما هو العنصر المناسب ليحتوي على فقرة نصية؟
+The suitable element to contain a paragraph of text is <p>.
+
+<p>This is a paragraph of text.</p>
+
+5. كيف تحدد لغة المحتوى الخاص بصفحتك. يمكنك كتابة العنصر الكامل مع ال Attributes الخاصة بتحديد اللغة؟
+You specify the language using the lang attribute in the <html> element. For example, if the language is English:
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Language Example</title>
+</head>
+<body>
+    <p>Welcome to my website!</p>
+</body>
+</html>
+
+6. في عالم الـ Accessibility هل الأفضل أن أكتب 10 – 20 أم 10 To 20؟
+It is better to write "10 to 20" rather than using the symbol "–". Clear text is more accessible for users relying on assistive technologies like screen readers.
+
+7. إذا كان لديك عنصر <div> وتريد الوصول إليه عن الطريق الضغط على زر الـ Tab، ماذا سوف تفعل في العنصر؟
+To make a <div> element accessible via the Tab key, you can add the tabindex attribute with a value of 0.
+
+<div tabindex="0">This element is focusable with the Tab key.</div>
+
+8. ماذا تعني كلمة ARIA؟
+ARIA stands for Accessible Rich Internet Applications. It is a set of attributes that enhance accessibility for web applications by defining roles, states, and properties that assistive technologies can use to better understand and interact with content.
+
+Example of using ARIA:
+
+<button aria-label="Submit the form">Submit</button>
